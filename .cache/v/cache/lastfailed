@@ -1,1 +1,3 @@
-{}
+{
+  "birdie/tests/test_views.py::TestPaymentView::()::test_payment": true
+}

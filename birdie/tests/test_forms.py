@@ -2,7 +2,7 @@ import pytest
 from .. import forms
 pytestmark = pytest.mark.django_db
 
-class TestPostForm:
+class TestPostCreateView:
     def test_form(self):
         form = forms.PostForm(data={})
         assert form.is_valid() == False, 'Should be invalid if, no data is present in the form.'

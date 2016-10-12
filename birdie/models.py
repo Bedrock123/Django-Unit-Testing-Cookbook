@@ -5,8 +5,8 @@ from django.db import models
 class Post(models.Model):
     body = models.TextField()
    
-    def __unicode__(self):
-        return str(self.id)
+    def get_message(self):
+        return self.body
 
     def get_excerpt(self, char):
         return self.body[:char]
